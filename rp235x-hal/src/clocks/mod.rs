@@ -92,7 +92,7 @@ mod clock_sources;
 
 use clock_sources::PllSys;
 
-use self::clock_sources::{GPin0, GPin1, LpOsc, PllUsb, Rosc, Xosc};
+use self::clock_sources::{GpIn0, GpIn1, LpOsc, PllUsb, Rosc, Xosc};
 
 bitfield::bitfield! {
     /// Bit field mapping clock enable bits.
@@ -407,8 +407,8 @@ clocks! {
         reg: clk_gpout0,
         auxsrc: {
             PllSys: CLKSRC_PLL_SYS,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1,
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1,
             PllUsb: CLKSRC_PLL_USB,
             /* CLKSRC_PLL_USB_PRIMARY_REF_OPCG */
             Rosc: ROSC_CLKSRC,
@@ -432,8 +432,8 @@ clocks! {
         reg: clk_gpout1,
         auxsrc: {
             PllSys: CLKSRC_PLL_SYS,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1,
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1,
             PllUsb: CLKSRC_PLL_USB,
             /* CLKSRC_PLL_USB_PRIMARY_REF_OPCG */
             Rosc: ROSC_CLKSRC,
@@ -457,8 +457,8 @@ clocks! {
         reg: clk_gpout2,
         auxsrc: {
             PllSys: CLKSRC_PLL_SYS,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1,
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1,
             PllUsb: CLKSRC_PLL_USB,
             /* CLKSRC_PLL_USB_PRIMARY_REF_OPCG */
             Rosc: ROSC_CLKSRC_PH,
@@ -482,8 +482,8 @@ clocks! {
         reg: clk_gpout3,
         auxsrc: {
             PllSys: CLKSRC_PLL_SYS,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1,
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1,
             PllUsb: CLKSRC_PLL_USB,
             /* CLKSRC_PLL_USB_PRIMARY_REF_OPCG */
             Rosc: ROSC_CLKSRC_PH,
@@ -515,8 +515,8 @@ clocks! {
         },
         auxsrc: {
             PllUsb:CLKSRC_PLL_USB,
-            GPin0:CLKSRC_GPIN0,
-            GPin1:CLKSRC_GPIN1
+            GpIn0:CLKSRC_GPIN0,
+            GpIn1:CLKSRC_GPIN1
             /* CLKSRC_PLL_USB_PRIMARY_REF_OPCG */
         }
     }
@@ -535,8 +535,8 @@ clocks! {
             PllUsb: CLKSRC_PLL_USB,
             Rosc: ROSC_CLKSRC,
             Xosc: XOSC_CLKSRC,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1
         }
     }
     /// Peripheral clock.
@@ -552,8 +552,8 @@ clocks! {
             PllUsb:CLKSRC_PLL_USB,
             Rosc: ROSC_CLKSRC_PH,
             Xosc: XOSC_CLKSRC,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1
         },
         div: false
     }
@@ -565,8 +565,8 @@ clocks! {
             SystemClock: CLK_SYS,
             PllUsb: CLKSRC_PLL_USB,
             PllSys: CLKSRC_PLL_SYS,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1
         }
     }
     /// USB reference clock.
@@ -580,8 +580,8 @@ clocks! {
             PllSys: CLKSRC_PLL_SYS,
             Rosc: ROSC_CLKSRC_PH,
             Xosc: XOSC_CLKSRC,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1
         }
     }
     /// ADC reference clock.
@@ -595,8 +595,8 @@ clocks! {
             PllSys: CLKSRC_PLL_SYS,
             Rosc: ROSC_CLKSRC_PH,
             Xosc: XOSC_CLKSRC,
-            GPin0: CLKSRC_GPIN0,
-            GPin1: CLKSRC_GPIN1
+            GpIn0: CLKSRC_GPIN0,
+            GpIn1: CLKSRC_GPIN1
         }
     }
 }
